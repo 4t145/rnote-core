@@ -1,0 +1,18 @@
+[package]
+name = "rnote-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytemuck = "1.16.0"
+wgpu = "0.20.0"
+
+[dev-dependencies]
+# pollster = "0.3.0"
+tokio = { version = "1", features = ["full"] }
+winit = "0.30.0"
+
+[[example]]
+name = "dev_windows_tokio"
+path = "examples/dev_windows_tokio.rs"
+required-features = ["tokio/full"]
