@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 bytemuck = {version = "1.16.0", features = ["derive"]}
+glam = "0.28.0"
 wgpu = "0.20.0"
 
 [dev-dependencies]

@@ -8,6 +8,11 @@ impl A16 {
         self.0 as f32 * RATIO
     }
 
+    pub fn to_rad(&self) -> f32 {
+        const RATIO: f32 = std::f32::consts::PI / (u16::MAX as f32);
+        self.0 as f32 * RATIO
+    }
+    
     pub fn new(value: u16) -> A16 {
         A16(value)
     }

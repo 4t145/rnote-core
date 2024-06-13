@@ -5,3 +5,5 @@ pub mod app;
 pub mod pad;
 pub mod geometry;
 pub mod measure;
+pub mod camera;
+pub mod handle;

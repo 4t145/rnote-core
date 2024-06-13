@@ -13,4 +13,10 @@ impl Rect {
             size: size.into(),
         }
     }
+    pub fn center(&self) -> Point {
+        Point::new(
+            self.point.x + self.size.width / 2.0,
+            self.point.y + self.size.height / 2.0,
+        )
+    }
 }
